@@ -1,0 +1,34 @@
+'use strict';
+
+var util = require('util');
+
+module.exports = function(grunt) {
+  
+  grunt.registerTask('ftpsync', 'Intelligent file syncronization over FTP', function() {
+		var done = this.async();
+		// fail if settings are missing
+		if (!grunt.config('ftpsync')) { console.error('fpsync settings not found'); }
+
+		// fetch the config
+		var config = grunt.config('ftpsync');
+
+		// run the sync
+		var ftpsync = require('ftpsync');
+		ftpsync.settings.local = config.local;
+		ftpsync.settings.remote = config.remote;
+		ftpsync.settings.host = config.host;
+		ftpsync.settings.port = config.port;
+		ftpsync.settings.user = config.user;
+		ftpsync.settings.pass = config.pass;
+		ftpsync.settings.connections = config.connections;
+		ftpsync.settings.ignore = config.ignore;
+		ftpsync.log.verbose = true;
+		ftpsync.log.write = grunt.verbose.writeln; // function(msg) { grunt.log.writeln(util.inspect(msg)); };
+		ftpsync.log.info = grunt.log.ok;
+		ftpsync.log.warn = grunt.log.error;
+		ftpsync.log.error = grunt.log.error;
+		ftpsync.run(done);
+
+    //grunt.log.writeln('You are so awesome!');
+  });
+};
