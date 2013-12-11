@@ -21,18 +21,25 @@
       "url": "https://github.com/eplaice/grunt-ftpsync/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/grunt-ftpsync",
+  "main": "tasks/grunt-ftpsync.js",
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {
-    "test": "grunt nodeunit"
+  "dependencies": {
+    "ftpsync": "~0.1.5"
   },
   "devDependencies": {
+    "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.2"
+    "grunt-contrib-watch": "~0.5.3"
   },
-  "keywords": []
+  "keywords": [
+    "ftp",
+    "client",
+    "transfer",
+    "sync",
+    "synchronise",
+    "grunt"
+  ]
 }
