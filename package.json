@@ -1,0 +1,38 @@
+{
+  "name": "grunt-ftpsync",
+  "description": "Intelligent file synchronization over FTP using Grunt.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eplaice/grunt-ftpsync",
+  "author": {
+    "name": "Evan Plaice",
+    "email": "evanplaice@gmail.com",
+    "url": "http://plus.google.com/+evanplaice"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eplaice/grunt-ftpsync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eplaice/grunt-ftpsync/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/eplaice/grunt-ftpsync/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/grunt-ftpsync",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2"
+  },
+  "keywords": []
+}
