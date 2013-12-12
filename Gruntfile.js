@@ -60,7 +60,7 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadTasks('./tasks');
+  grunt.loadTasks('tasks');
 
   // Default task.
   grunt.registerTask('default', ['jshint']);
