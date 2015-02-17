@@ -41,19 +41,7 @@ module.exports = function(grunt) {
       //  files: '<%= jshint.test.src %>',
       //  tasks: ['jshint:test', 'nodeunit']
       //},
-    },
-    ftpsync: {
-      local: 'C:/Users/eplaice/Dev/node-ftpsync/test/local/',
-      remote: '/',
-      host: "127.0.0.1",
-      port: 9999,
-      user: "anonymous",
-      pass: "",
-      connections: 1,
-      ignore: [
-        ".htaccess"
-      ]
-    },
+    }
   });
 
   // These plugins provide necessary tasks.
