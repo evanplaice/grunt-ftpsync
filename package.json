@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/eplaice/grunt-ftpsync.git"
+    "url": "git://github.com/evanplaice/grunt-ftpsync.git"
   },
   "bugs": {
-    "url": "https://github.com/eplaice/grunt-ftpsync/issues"
+    "url": "https://github.com/evanplaice/grunt-ftpsync/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/eplaice/grunt-ftpsync/blob/master/LICENSE-MIT"
+      "url": "https://github.com/evanplaice/grunt-ftpsync/blob/master/LICENSE-MIT"
     }
   ],
   "main": "tasks/grunt-ftpsync.js",
