@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(grunt) {
-  // Project configuration.
+
   grunt.initConfig({
     ftpsync: {
       local: 'C:/dir/to/some/stuff',
@@ -17,9 +17,7 @@ module.exports = function(grunt) {
     },
   });
 
-  // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-ftpsync');
 
-  // Default task.
   grunt.registerTask('default');
 };
