@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 	ftpsync.log.verbose = grunt.option('verbose')
 	ftpsync.log.write = function(msg) { grunt.log.writeln(util.inspect(msg)); };
 	ftpsync.log.info = grunt.log.ok;
-	ftpsync.log.warn = grunt.log.error;
+	ftpsync.log.warn = grunt.log.warn;
 	ftpsync.log.error = grunt.log.error;
 	ftpsync.run(done);
   });
