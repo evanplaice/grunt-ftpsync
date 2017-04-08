@@ -56,12 +56,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 Before you contribute your changes be sure to Lint your code using [Grunt](http://gruntjs.com/).
 
-## Release History
-
-0.1.0 - Initial release
-- fully functional ftp push
-- grunt-style logging support
-
 ## License
 Copyright (c) 2013 Evan Plaice  
 Licensed under the MIT license.
