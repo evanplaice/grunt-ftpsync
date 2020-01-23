@@ -1,3 +1,7 @@
+<strong><p align="center">NOTICE: This package is officially deprecated</p></strong>
+
+-----
+
 Intelligent file synchronization over FTP using Grunt.
 
 Wrapping the ftpsync library, updating a full hierarchy of files is as simple as adding a new grunt task.
